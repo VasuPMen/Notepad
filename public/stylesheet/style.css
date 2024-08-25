@@ -1,0 +1,129 @@
+/* General Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea.title, textarea.text {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fafafa;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+textarea.title {
+    height: 100px;
+}
+
+textarea.text {
+    height: 200px;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* File List Styling */
+.show {
+    margin-top: 20px;
+}
+
+.file-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.file-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.file-item a {
+    color: #007bff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.file-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.file-item form {
+    display: inline;
+}
+
+.file-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.file-item button:hover {
+    background-color: #c82333;
+}
+
+/* No Files Message Styling */
+p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+}

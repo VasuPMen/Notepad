@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="/create" method="post">
+            <div class="write">
+                <textarea class="title" placeholder="Please write title here" name="title" required></textarea>
+                <textarea class="text" placeholder="Write anything" name="detail" required></textarea>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div class="show">
+            <% if (file.length > 0) { %>
+                <% file.forEach((val) => { %>
+                    <div class="file-item">
+                        <h3><%= val %></h3>
+                        <a href="/file/<%= val %>">Click here</a>
+                        <form action="/delete/<%= val %>" method="post" style="display: inline;">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <p>No files uploaded</p>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
